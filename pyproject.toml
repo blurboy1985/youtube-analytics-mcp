@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "private-youtube-analytics-mcp"
+version = "0.1.0"
+description = "Local, read-only, owner-authorized YouTube analytics MCP"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Daniel Quek"}]
+dependencies = ["mcp>=1.29,<2", "httpx>=0.28,<0.29", "cryptography>=46,<51", "uvicorn>=0.35,<1"]
+
+[project.scripts]
+youtube-analytics-mcp = "youtube_mcp.server:main"
+youtube-analytics-auth = "youtube_mcp.auth:main"
+youtube-analytics-remote = "youtube_mcp.remote:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
