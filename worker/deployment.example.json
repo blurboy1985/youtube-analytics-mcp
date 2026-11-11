@@ -1,0 +1,15 @@
+{
+  "main_module": "worker.js",
+  "compatibility_date": "2026-11-11",
+  "compatibility_flags": ["global_fetch_strictly_public"],
+  "bindings": [
+    {"type":"plain_text","name":"BASE_URL","text":"https://YOUR-VERIFIED-HOST"},
+    {"type":"plain_text","name":"PUBLIC_LAUNCH_READY","text":"false"},
+    {"type":"plain_text","name":"POLICY_APPROVED","text":"false"},
+    {"type":"plain_text","name":"OPERATOR_NAME","text":""},
+    {"type":"plain_text","name":"SUPPORT_EMAIL","text":""},
+    {"type":"durable_object_namespace","name":"AUTH_STORE","class_name":"AuthStore"}
+  ],
+  "migrations":{"new_sqlite_classes":["AuthStore"],"new_tag":"v1"},
+  "observability":{"enabled":false}
+}

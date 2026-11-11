@@ -1,4 +1,6 @@
-# Private YouTube Analytics MCP
+# YouTube Analytics MCP
+
+> Public multi-user Cloudflare Workers development is in `worker/`. It remains launch-gated pending Google OAuth setup/verification, operator policy approval and live tests. See [public Workers deployment](docs/PUBLIC_WORKERS.md). The Python implementation below remains single-owner.
 
 A working, local-first **read-only MCP server** for one Google-authorized YouTube channel. It uses official YouTube Data and Analytics APIs, with encrypted local authorization storage. No public server is deployed, and no Google account is connected yet.
 

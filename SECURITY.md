@@ -1,5 +1,7 @@
 # Security and release scope
 
+The following sections describe the original Python release. The new multi-user Worker has a separate threat boundary and a closed public-launch gate; see [PUBLIC_WORKERS.md](docs/PUBLIC_WORKERS.md). It is not production-certified or live-account-validated.
+
 ## Threat boundary
 The local operating-system user and MCP host are trusted. The encrypted token file protects against file-only disclosure; it does not protect against malware, a compromised host/client, or an attacker who obtains both the encryption key and file. Put the key in a user-controlled secure launcher/secret store. The app does not implement multi-user isolation.
 
