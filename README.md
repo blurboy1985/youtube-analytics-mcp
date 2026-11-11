@@ -92,7 +92,7 @@ $env:PYTHONPATH = 'src'
 .\.venv\Scripts\python.exe -m compileall -q src tests
 ```
 
-Verified in the build environment: 18 tests passed, including real MCP SDK stdio initialization/list/call, encrypted storage, safe failures, owner binding, input limits and authentication retry. API tests use synthetic fixtures, not Daniel's data. Live Google consent, refresh and actual report responses **have not been tested** because no OAuth project/client/account access has been supplied. Do not call this production-certified.
+Verified in the build environment: 22 tests passed, including real MCP SDK stdio initialization/list/call, authenticated Streamable HTTP initialization/discovery and authentication/host/origin rejection, encrypted storage, safe failures, owner binding, input limits and authentication retry. API tests use synthetic fixtures, not Daniel's data. Live Google consent, refresh and actual report responses **have not been tested** because no OAuth project/client/account access has been supplied. Do not call this production-certified.
 
 ## Policy and production checklist
 
