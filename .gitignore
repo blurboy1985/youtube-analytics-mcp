@@ -14,3 +14,8 @@ dist/
 authorization*
 token*.json
 .pytest_cache/
+node_modules/
+.dev.vars
+.dev.vars.*
+.cloudflare/
+.wrangler/
